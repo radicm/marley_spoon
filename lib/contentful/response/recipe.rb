@@ -20,7 +20,7 @@ module Condentful
       # @param [Contentful::Entry] response
       # @return [Condentful::Response::Recipe]
       def self.call(response)
-        chef = response.fields[:chef].fields[:name] || ""
+        chef = response.fields[:chef] ? response.fields[:chef].fields[:name] : ""
         tags = response.fields[:tags] || []
 
         new(id:          response.id,
