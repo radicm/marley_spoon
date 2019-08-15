@@ -1,0 +1,35 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore the ERD
+erd.pdf
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+/config/database.yml
+!/config/database.yml.example
+
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# Ignore application configuration
+/config/application.yml
+!/config/application.yml.example
+
+# Ignore local uploads
+/public/uploads/*
+# Except default avatar and logo
+!/public/uploads/default_avatar.png
+!/public/uploads/logo-lg.png
+# Mac OS trash
+.DS_Store
