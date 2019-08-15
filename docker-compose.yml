@@ -1,0 +1,14 @@
+version: "3"
+services:
+  app:
+    tty: true
+    stdin_open: true
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    environment:
+      - CONTENTFUL_ENVIIRONMENT=master
+      - CONTENTFUL_SPACE=kk2bw5ojx476
+      - CONTENTFUL_ACCESS_TOKEN=7ac531648a1b5e1dab6c18b0979f822a5aad0fe5f1109829b8a197eb2be4b84c
