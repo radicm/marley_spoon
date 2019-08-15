@@ -1,0 +1,14 @@
+  <table >
+    <tbody>
+    <tr>
+      <td>Title</td>
+      <td>Image</td>
+    </tr>
+<% @data.each do |n| %>
+    <tr>
+      <td><a href="/recipes/<%= n.id %>"><%= n.title %></a></td>
+      <td><img src="<%= n.photo_url %>" alt="Smiley face" height="42" width="42"></td>
+    </tr>
+<% end %>
+    </tbody>
+  </table>
