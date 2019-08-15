@@ -2,8 +2,8 @@ lib = File.expand_path("./", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 
-require './app/api/base'
+require './app/api/recipes'
 
-run Api::Base
+run Sinatra::Application
 
 Sinatra::Application.set :view, `pwd` + 'view'
